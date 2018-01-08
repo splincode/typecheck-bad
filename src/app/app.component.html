@@ -1,0 +1,11 @@
+<p>current selectedCtxField:</p>
+
+<pre>
+{{selectedCtxField|json}}
+</pre>
+
+<select [(ngModel)]="selectedCtxField">
+  <option *ngFor="let ctx of ctxFields" name="ctx" [ngValue]="ctx.value">
+    {{ctx.value}}
+  </option>
+</select>
